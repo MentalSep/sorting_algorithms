@@ -31,6 +31,8 @@ void helper(int *array, size_t first, size_t last, size_t size)
 {
 	size_t i, j, pivot, tmp;
 
+	if (last <= first || size < 2 || !array)
+		return;
 	pivot = last;
 	i = first;
 
